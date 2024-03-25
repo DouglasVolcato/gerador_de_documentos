@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Gerador de Documentos</title>
+</head>
+<body>
+	<h1>Documentação do Gerador de Documentos</h1>
+	<p><strong>Descrição:</strong> Aplicação para gerar múltiplos documentos com base em um modelo padrão. Leia as instruções antes de utilizar.</p>
+
+	<h2>Organizando a Planilha de Dados</h2>
+	<ol>
+		<li>Os dados para a geração dos documentos devem estar organizados na planilha com o nome de 'planilha_dados.xlsx'.</li>
+		<li>A primeira linha da planilha é para o nome das colunas, já as outras linhas para os dados.</li>
+		<li>Pode-se colocar diversas colunas na planilha.</li>
+		<li>Não criar 2 colunas com o mesmo nome e nem utilizar nomes compostos.</li>
+	</ol>
+
+	<h2>Organizando o Modelo de Documento</h2>
+	<p>O modelo de documento deve ter o nome 'modelo_documento.docx' na mesma pasta da aplicação e deve conter os campos personalizados com o código:</p>
+	<ol>
+		<li>Para inserir um campo, digite {campo_nome} no texto do documento.</li>
+		<li>O 'campo_nome' deve ser único em todo o modelo e não pode conter espaços.</li>
+	</ol>
+
+    <h2>Gerando os Documentos</h2>
+	<p>Estando com a planilha de dados preenchida e com o modelo de documento corretamente configurado, basta clicar no programa 'gerar_documentos.exe'.<br> Isso gerará 1 documento docx personalizado para cada linha da planilha de dados. <br> Os documentos gerados estarão na pasta 'documentos_gerados'.</p>
+
+    <h2>Avisos</h2>
+	<p>Não altere o nome do modelo de documento, da planilha de dados ou do script - e nem o tipo de arquivo dos mesmos.</p>
+</body>
+<style>
+    body{
+        width: 90vw;
+        background-color: rgb(22, 48, 60);
+        color: aliceblue;
+    }
+</style>
+</html>
